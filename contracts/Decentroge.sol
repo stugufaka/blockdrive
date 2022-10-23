@@ -3,6 +3,7 @@ pragma solidity ^0.8.9;
 import "@openzeppelin/contracts/utils/Counters.sol";
 import "@openzeppelin/contracts/token/ERC721/extensions/ERC721URIStorage.sol";
 import "@openzeppelin/contracts/token/ERC721/ERC721.sol";
+import "@chainlink/contracts/src/v0.8/interfaces/AggregatorV3Interface.sol";
 
 contract Decentroge is ERC721URIStorage {
     // uint256 public folderId;
@@ -11,10 +12,9 @@ contract Decentroge is ERC721URIStorage {
     using Counters for Counters.Counter;
     Counters.Counter private _tokenIds;
     Counters.Counter private _itemsSold;
-    uint256 public userCount = 0;
-    uint256 listingPrice = 0.025 ether;
 
     // uint256 public platformCount = 0;
+    AggregatorV3Interface internal eth_usd_price_feed;
 
     mapping(uint256 => MarketItem) private idToMarketItem;
 
@@ -111,9 +111,21 @@ contract Decentroge is ERC721URIStorage {
     mapping(uint256 => mapping(uint256 => File)) file;
     mapping(uint256 => User) users;
     mapping(address => User) userProfile;
+    uint256 public userCount = 0;
+    uint256 listingPrice = 0.025 ether;
 
     constructor() ERC721("Metaverse Tokens", "METT") {
         owner = payable(msg.sender);
+        eth_usd_price_feed = AggregatorV3Interface(
+            0x7bAC85A8a13A4BcD8abb3eB7d6b4d632c5a57676
+        );
+    }
+
+    //get EthUsd
+    function getEthUsd() public view returns (uint256) {
+        // (, int256 price, , , ) = eth_usd_price_feed.latestRoundData();
+        (, int256 price, , , ) = eth_usd_price_feed.latestRoundData();
+        // return price;
     }
 
     function addPlatform(
