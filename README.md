@@ -38,23 +38,17 @@
 
 ## 💪 Motivation
 
-Rotating between several web3 storage solutions, such as IPFS and Web3 Storage, can be difficult at times. For my files, I personally use IPFS and web3 storage. Can we generate NFTs from files we've previously submitted to these platforms? Is it possible to have a user-friendly interface that displays files and organizes them into folders? What if you could manage all of your files from one location?
-
-That is how blockdrive came to be.
+With the ever-growing popularity of cryptocurrencies and the rise of blockchain technologies, the need for decentralized storage solutions has never been greater. Blockdrive is a decentralized cloud storage platform that is user-centered and security-minded. With Blockdrive, users can chat, convert files to NFTs, and share content with ease and confidence.
 
 ## 🚀 How it works
 
-Blockdrive is a decentralise storage online Platforms with NFT and Chatting capabilities. We are building a platform that allows products, services, or applications to be stored in a secure and reliable way using blockchain technology infrastructure to ensure data reliability. Blockdrive will make the right product available at the right time through our decentralized internet platform.
+Blockdrive is a decentralized cloud storage platform that leverages the use of IPFS and web3 storage to store files, thereby improving security. It also comes with chatting capabilities and the ability to convert a file into an NFT.
 
-- **Storage: You have the freedom to choose whether to store your data on IPFS or Web3 Storage**
+We believe that data should be stored in a decentralized manner so that no single entity has control over it. This is why we have built our platform on top of IPFS and web3 storage. These technologies enable us to provide a secure and reliable storage solution for our users.
 
-- **File manager: Directly browse your files from your dashboard**
+In addition to our storage capabilities, Blockdrive also offers chatting capabilities. This allows our users to communicate with each other directly through our platform. We believe that this feature will be particularly useful for those who need to collaborate on projects or files.
 
-- **Sharing: Easily share files with friends and family.**
-
-- **NFT Token: Mint NFTs directly from the files uploaded on blockdrive**
-
-- **Chat: Send messages on blockdrive.**
+Finally, we also offer the ability to convert a file into an NFT.
 
 ## 🦋 Prerequisite
 
