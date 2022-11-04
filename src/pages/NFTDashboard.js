@@ -21,7 +21,7 @@ export default function NFTDashboard() {
   async function loadNFT() {
     const data = await signer?.fetchItemsListed();
     setnfts(data);
-    console.log("nft ---------", data);
+    console.log("nft -------", data);
   }
   useEffect(() => {
     loadNFT();
