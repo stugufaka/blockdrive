@@ -22,8 +22,8 @@ ReactDOM.render(
       <Windmill usePreferences>
         <AuthProvider>
           <MoralisProvider
-            appId="GQDfrdguZn6CQL9LOn80cA2qdyzGKlOJRFZlV6NU"
-            serverUrl="https://3mn5ud8bskbv.usemoralis.com:2053/server"
+            appId="o2DpocS7Kd4jPFVCEmYUdxyQAyx51SflwTnyCGln"
+            serverUrl="https://jtog9qjv1t2r.usemoralis.com:2053/server"
           >
             <App />
           </MoralisProvider>

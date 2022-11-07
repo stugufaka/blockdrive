@@ -70,16 +70,7 @@ function Charts() {
 
   const onCreatePlatform = async () => {
     // console.log(token);
-    if (
-      token == ""
-      // ||
-      // platformName === "" ||
-      // projectid === "" ||
-      // projectsecret === ""
-    ) {
-      alert("All fields are required");
-      return;
-    }
+
     let transaction = await signer.addPlatform(
       platformName,
       token,
@@ -101,7 +92,7 @@ function Charts() {
       let arr = getIPFSstorage();
       localStorage.setItem(
         `ipfs`,
-        JSON.stringify([arr[0]?.platformName, arr[0].platform_id.toString()])
+        JSON.stringify([arr[0]?.platformName, arr[0]?.platform_id?.toString()])
       );
       localStorage.setItem("isActive", type);
       var res = JSON.parse(localStorage.getItem(type));
@@ -113,7 +104,7 @@ function Charts() {
       let arr = getWeb3storage();
       localStorage.setItem(
         `webStorage`,
-        JSON.stringify([arr[0]?.platformName, arr[0].platform_id.toString()])
+        JSON.stringify([arr[0]?.platformName, arr[0]?.platform_id?.toString()])
       );
       localStorage.setItem("isActive", type);
       var res = JSON.parse(localStorage.getItem(type));
@@ -207,7 +198,7 @@ function Charts() {
       </Modals>
       <div className="mb-4">
         <ChartCard title="Decentralize storage ">
-          <div className="grid md:grid-cols-2 grid-cols-1  gap-6">
+          <div className="grid md:grid-cols-1 grid-cols-1  gap-6">
             <article
               onClick={() => {
                 setPlatformActive("ipfs");
@@ -220,9 +211,9 @@ function Charts() {
             >
               <div class="flex items-center justify-between">
                 <div>
-                  <p class="text-sm text-gray-500 dark:text-gray-300">
+                  {/* <p class="text-sm text-gray-500 dark:text-gray-300">
                     Platform
-                  </p>
+                  </p> */}
 
                   <p class="text-2xl font-medium text-gray-900 dark:text-gray-300">
                     IPFS
@@ -238,7 +229,7 @@ function Charts() {
                 </div>
               ) : (
                 <>
-                  <p className="text-red-500">NB: Credentials are Immutable</p>
+                  {/* <p className="text-red-500">NB: Credentials are Immutable</p> */}
                   <div
                     onClick={() => {
                       setplatformName("IPFS");
@@ -264,9 +255,9 @@ function Charts() {
             >
               <div class="flex items-center justify-between">
                 <div>
-                  <p class="text-sm text-gray-500 dark:text-gray-300">
+                  {/* <p class="text-sm text-gray-500 dark:text-gray-300">
                     Platform
-                  </p>
+                  </p> */}
 
                   <p class="text-2xl font-medium text-gray-900 dark:text-gray-300">
                     Web3.storage
@@ -282,7 +273,7 @@ function Charts() {
                 </div>
               ) : (
                 <>
-                  <p className="text-red-500">NB: Credentials are Immutable</p>
+                  {/* <p className="text-red-500">NB: Credentials are Immutable</p> */}
                   <div
                     onClick={() => {
                       setplatformName("Web3 Storage");

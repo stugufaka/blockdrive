@@ -78,7 +78,7 @@ function Buttons() {
       {/* {isUserRegistered() == false ? setVisible(true) : setVisible(false)} */}
       {/* <Button onClick={handler}>Open modal</Button> */}
       {userstatus == false ? (
-        <Button color="gradient" onClick={handler} className="mt-6">
+        <Button onClick={handler} className="mt-6 w-4">
           Add Profile
         </Button>
       ) : (
