@@ -1,8 +1,6 @@
 import React, { useEffect, useState, useContext } from "react";
 import { Link, useHistory } from "react-router-dom";
 
-import ImageLight from "../assets/img/login-office.jpeg";
-import ImageDark from "../assets/img/login-office-dark.jpeg";
 import Image_ from "../assets/productify-logo.svg";
 import { GithubIcon, TwitterIcon } from "../icons";
 import { Label, Input, Textarea, Button } from "@windmill/react-ui";
