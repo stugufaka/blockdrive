@@ -27,9 +27,9 @@
 
 <h2 align="center">🌐 Links 🌐</h2>
 <p align="center">
-    <a href="https://youtu.be/ud4P45zhCk0" title="">🖥️ Video</a>
+    <a href="https://youtu.be/v2ahviEfXv8" title="">🖥️ Video</a>
     .
-    <a href="https://youtu.be/ud4P45zhCk0" title="">🔗 Website</a>
+    <a href="https://blockdrive.netlify.app/app/dashboard" title="">🔗 Website</a>
     ·
     <a href="https://github.com/stugufaka/blockdrive" title="">📂 Repo</a>
     ·
