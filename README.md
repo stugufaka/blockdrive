@@ -148,6 +148,8 @@ module.exports = {
 
 - [Git](https://git-scm.com/ "Git") : For Version Control System
 
+- [Quick Node](https://www.quicknode.com "QuickNode") : Blockchain APIs
+
 ## 📂 Contributing
 
 Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are greatly appreciated.
