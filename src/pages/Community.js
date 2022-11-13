@@ -191,7 +191,7 @@ function Buttons() {
           </Button>
         </Modal.Footer>
       </Modal>
-      <PageTitle>Decentroge Community</PageTitle>
+      <PageTitle>Blockdrive Community</PageTitle>
 
       <form className="mb-4">
         <label
